@@ -11,7 +11,7 @@ M.exe_path = vim.fn.stdpath "data" .. "/appearance_watch"
 
 M.ensure_compiled = function()
   if not Path:new(M.exe_path):exists() then
-    vim.notify "Compiling appearance_watch…"
+    vim.notify "Compiling autobg helper…"
     local script_dir = debug.getinfo(2, "S").source:sub(2):match "(.*/)"
     local j = Job:new {
       command = "swiftc",
