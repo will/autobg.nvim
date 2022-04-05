@@ -4,7 +4,7 @@ local Path = require "plenary.path"
 local M = {}
 
 M.callback = function(mode)
-  vim.cmd("set bg=" .. mode)
+  vim.o.background = mode
 end
 
 M.exe_path = vim.fn.stdpath "data" .. "/appearance_watch"
@@ -56,6 +56,5 @@ M.setup = function(opts)
   M.start()
 end
 
-M.setup {}
-
 return M
+
