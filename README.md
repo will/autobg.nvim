@@ -1,3 +1,6 @@
+Use github.com/will/bgwinch.nvim instead since neovim 0.7
+
+
 # autobg.nvim
 
 This plugin syncs the background option in neovim to match the macOS appearance.
